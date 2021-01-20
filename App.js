@@ -6,6 +6,7 @@ import AppLoading from 'expo-app-loading';
 import { Navbar } from './src/components/Navbar';
 import { MainScreen } from './src/screens/MainScreen';
 import { TodoScreen } from './src/screens/TodoScreen';
+import { THEME } from './src/theme';
 
 async function loadApplication() {
   await Font.loadAsync({
@@ -19,7 +20,7 @@ export default function App() {
   const [isReady, setIsReady] = useState(false)
   const [todoId, setTodoId] = useState(null)
   const [todos, setTodos] = useState([
-    {id: '1', title: 'Дело 1'}
+    {id: '1', title: 'Дело 2'}
   ])
 
   if (!isReady) {
@@ -114,7 +115,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 20,
+    paddingHorizontal: THEME.PADDING_HORIZONTAL,
     paddingVertical: 20
   }
 });

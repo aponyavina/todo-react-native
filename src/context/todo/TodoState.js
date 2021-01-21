@@ -1,5 +1,5 @@
 import React, {useReducer} from 'react'
-import { ADD_TODO, UPDATE_TODO } from '../types'
+import { ADD_TODO, UPDATE_TODO, REMOVE_TODO} from '../types'
 import {TodoContext} from './todoContext'
 import {todoReducer} from './todoReducer'
 
